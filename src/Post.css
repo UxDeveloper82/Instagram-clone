@@ -23,6 +23,10 @@
     padding: 20px;
 }
 
+.post__header img{
+    width: 20px;
+}
+
 .post__avatar{
     margin-right: 10px;
 }

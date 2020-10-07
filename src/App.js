@@ -81,19 +81,13 @@ function App() {
   }
   const signIn = (event) => {
     event.preventDefault();
-    auth.createUserWithEmailAndPassword(email, password)
-    .then((authUser) => {
-       return authUser.user.updateProfile({
-         displayName: username
-       })
-    })
+    auth.signInWithEmailAndPassword(email, password)
     .catch((error) => alert(error.message));
+    setOpenSignIn(false);
   }
 
   return (
-    <div className="App">
-      
-      
+    <div className="App">      
       <Modal 
           open={open}
           onClose={() => setOpen(false)}> 
@@ -168,10 +162,15 @@ function App() {
         <div className="app__header">
             <img className="app__headerImage" 
               src="https://pngimage.net/wp-content/uploads/2018/06/nome-instagram-png-4.png" alt=""/>
+            { user ? (
+              <Button onClick={() => auth.signOut()}>Logout</Button>
+            ) : (
+              <div className="app__loginContainer">
+                  <Button onClick={() => setOpenSignIn(true)}>Sign In</Button>
+                  <Button onClick={() => setOpen(true)}>Sign Up</Button>
+              </div>
+            )}
         </div>
-
-        <Button onClick={() => setOpenSignIn(true)}>Sign In</Button>
-        <Button onClick={() => setOpen(true)}>Sign Up</Button>
 
         <h1>Hello From Icreatesites4u</h1>
 
