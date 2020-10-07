@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Post from './Post';
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
               src="https://pngimage.net/wp-content/uploads/2018/06/nome-instagram-png-4.png" alt=""/>
         </div>
         <h1>Hello From Icreatesites4u</h1>
-
+        
+        <Post />
         {/* Posts */}
         {/* Posts */}
     </div>
