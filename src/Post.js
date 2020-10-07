@@ -7,15 +7,15 @@ function Post( {username, caption, imageUrl }) {
         <div className="post">
            <div className="post__header">
            <Avatar className="post__avatar"
-                    alt="{username}"
+                    alt={username}
                     src="https://png.pngtree.com/png-clipart/20190924/original/pngtree-businessman-user-avatar-free-vector-png-image_4827807.jpg"
             />
             <h3>{username}</h3>
            </div>
             
-            <img class="post__image" src={imageUrl} alt=""/>
+            <img className="post__image" src={imageUrl} alt=""/>
          
-              <h4 class="post__text"><strong>{username}</strong> {caption}</h4>
+              <h4 className="post__text"><strong>{username}</strong> {caption}</h4>
               
         </div>
     )
