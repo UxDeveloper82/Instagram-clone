@@ -12,6 +12,8 @@ function App() {
         <h1>Hello From Icreatesites4u</h1>
         
         <Post />
+        <Post />
+        <Post />
         {/* Posts */}
         {/* Posts */}
     </div>

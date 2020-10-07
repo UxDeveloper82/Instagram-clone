@@ -16,3 +16,15 @@
     font-weight: normal;
     padding: 20px;
 }
+
+.post__header{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.post__avatar{
+    margin-right: 10px;
+}
+
+
