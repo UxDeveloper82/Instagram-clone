@@ -11,11 +11,7 @@ function App() {
         </div>
         <h1>Hello From Icreatesites4u</h1>
         
-        <Post />
-        <Post />
-        <Post />
-        {/* Posts */}
-        {/* Posts */}
+        <Post username="Martin F" caption="Wow it works" imageUrl="http://icreatesites4u.com/Image/img_31-05-2020-19-09-17.png"/>
     </div>
   );
 }
